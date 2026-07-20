@@ -272,7 +272,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-2 pt-3">
               {(hasResume ? resumeList : defaultSkills).map((item, i) => {
                 const color = SKILL_COLORS[i % SKILL_COLORS.length];
-                const name = 'name' in item ? item.name : item.name;
+                const name = item.name;
                 return (
                   <span
                     key={name}
